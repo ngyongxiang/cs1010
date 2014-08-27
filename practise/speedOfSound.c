@@ -9,7 +9,7 @@ int main(void){
 		scanf("%f",&temperature);
 		
 		sound_speed=speed_of_sound(temperature);
-		printf("Speed of sound in air of %.2f degree = %.2f ft/sec",temperature,sound_speed);
+		printf("Speed of sound in air of %.2f degree = %.2f ft/sec\n",temperature,sound_speed);
 		
 		return 0;	
 }
