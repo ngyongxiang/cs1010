@@ -17,7 +17,7 @@ int main(void){
 	// Variable declaration
 	int principal,rate,numYears;
 	float money;
-	float d,n; // let d be denumerator and n be numerator.
+	float denominator,numerator; // let d be denumerator and n be numerator.
 
 	// Display prompt and capture user input
 	printf("Enter principal amount: ");
@@ -30,9 +30,9 @@ int main(void){
 	scanf("%d",&numYears);
 
 	// Computer the result
-	n=(float)principal*(1-pow((rate/100.0),(float)numYears+1));
-	d=1-(rate/100.0);
-	money=n/d;
+	numerator=(float)principal*(1-pow((rate/100.0),(float)numYears+1));
+	denominator=1-(rate/100.0);
+	money=numerator/denominator;
 
 	// Print result
 	printf("Amount = $%.2f\n",money);
