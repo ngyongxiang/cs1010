@@ -25,16 +25,16 @@ int main(void){
 }
 
 int count_candle(int num_candles,int amt_newcandle){
-	int i,new_candle; //number of new candles made from residual wax
-	new_candles=0;
+	int counter,new_candle; //number of new candles made from residual wax
+	new_candles=1;
 
-	for (i=0;i<=num_candles;i++){
+	for (i=0;i<=num_candles;counter++){
 		if (i%amt_newcandle==0){
-			new_candles++;
+			num_candles++;
 		}
 	}
 
-	return new_candle+
+	return counter;
 }
 
 
