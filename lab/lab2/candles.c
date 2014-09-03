@@ -35,13 +35,7 @@ number of candles burnt = num_candles without looping.
 int count_candle(int num_candles,int amt_newcandle){
 	int counter; //number of new candles made from residual wax
 	
-    /*
-	Take note that counter start from 1 instead of 0
-	because 0%0 is 0, the same can be achieved by stating
-	if (counter%amt_newcandle==0&&counter!=0),for simplicity
-    we just let counter start from 1 to avoid this.
-	*/
-	for (counter=1;counter<=num_candles;counter++){
+for (counter=1;counter<=num_candles;counter++){
 		if (counter%amt_newcandle==0){
 			num_candles++;
 		}
