@@ -10,9 +10,9 @@
 
 #include <stdio.h>
 
-int find_sqrfree(int lower,int upper);
-int sqr_num_test(int num);
-int compare_num(int num1,int num2);
+int find_sqrfree(int ,int );
+int sqr_num_test(int );
+int compare_num(int ,int );
 
 int main(void) {
 	int lower1, upper1, lower2, upper2,num_range1,num_range2; //num_range1,num_range2 = number of squre free numers.
@@ -59,7 +59,9 @@ int find_sqrfree(int lower,int upper){
 // because "a square_free number is divisible by no square number except 1."
 int sqr_num_test(int num){
 	int k;
-	for (k=2;k<=num/2;k++){
+	// k = num/2 because k*k will not be divisible by num if k>num/2,
+	//therefore we can conclude directly that num is square-free.eg,num=4,k=num/2+1,k*k=9, 4 is not dvivisible by 9.  
+	for (k=2;k<=num/2;k++){ 
 		if (num%(k*k)==0){
 			return 0;
 		}

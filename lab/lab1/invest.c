@@ -17,9 +17,9 @@ int main(void){
 	// Variable declaration
 	int principal,rate,numYears;
 	float money;
-	float denominator,numerator; // let d be denumerator and n be numerator.
+	float denominator,numerator;  
 
-	// Display prompt and capture user input
+	// Capture user input
 	printf("Enter principal amount: ");
 	scanf("%d",&principal);
 
