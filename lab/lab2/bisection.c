@@ -64,7 +64,7 @@ int main(void) {
 	printf("\n");
 
 	count++;
-	}while(fabs_ab>=THRESHOLD);
+	}while(fabs_ab>=THRESHOLD && fabs(pM)!=0);
 
 
 	printf("root = %f\n", m);
