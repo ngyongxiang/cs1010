@@ -18,52 +18,52 @@ int main(void) {
 	double a, b,           // endpoints
 		   pA, pB;         // function values at endpoints
 	double m, pM;          // midpoint and function value at midpoint
-    double fabs_ab;
+	double fabs_ab;
 
 	count=0; 			   // initiate count
-	
+
 	printf("Enter coefficients (c3,c2,c1,c0) of polynomial: ");
 	scanf("%d %d %d %d", &c3, &c2, &c1, &c0);
 
 	printf("Enter endpoints a and b: ");
 	scanf("%lf %lf",&a,&b);
 
-	
-    do {	
-	
-	fabs_ab=fabs(a-b);    //  fabs_ab have to be calculated before new a or b val is assigned. Otherwise, 1 loop is missing.
 
-	//calculate midpoint
-	m=(a+b)/2;
+	do {	
 
-    printf("a = %f  ; ",a);
-	printf("b = %f  ; ",b);
-	printf("m = %f  ; \n",m);
-	
+		fabs_ab=fabs(a-b);    //  fabs_ab have to be calculated before new a or b val is assigned. Otherwise, 1 loop is missing.
 
-	
-	//find P(a), p(b),p(m)
-	pA=polynomial(a,c3,c2,c1,c0);
-	printf("p(a) = %f; ",pA);
+		//calculate midpoint
+		m=(a+b)/2;
 
-	pB=polynomial(b,c3,c2,c1,c0);
-	printf("p(b) = %f; ",pB);
+		printf("a = %f  ; ",a);
+		printf("b = %f  ; ",b);
+		printf("m = %f  ; \n",m);
 
-	pM=polynomial(m,c3,c2,c1,c0);
-	printf("p(m) = %f;\n ",pM);
 
-	//replace m with a or b depends on sign or m
-	if ((pM<0 && pA<0)||(pM>0&&pA>0)){
-		a=m;
-	}else if ((pM<0 && pB<0) || (pM>0 && pB>0)){
-		b=m;	
-	}
 
-	//printf("a - b = %f\n", fabs(a-b));
+		//find P(a), p(b),p(m)
+		pA=polynomial(a,c3,c2,c1,c0);
+		printf("p(a) = %f; ",pA);
 
-	printf("\n");
+		pB=polynomial(b,c3,c2,c1,c0);
+		printf("p(b) = %f; ",pB);
 
-	count++;
+		pM=polynomial(m,c3,c2,c1,c0);
+		printf("p(m) = %f;\n ",pM);
+
+		//replace m with a or b depends on sign or m
+		if ((pM<0 && pA<0)||(pM>0&&pA>0)){
+			a=m;
+		}else if ((pM<0 && pB<0) || (pM>0 && pB>0)){
+			b=m;	
+		}
+
+		//printf("a - b = %f\n", fabs(a-b));
+
+		printf("\n");
+
+		count++;
 	}while(fabs_ab>=THRESHOLD && fabs(pM)!=0);
 
 
