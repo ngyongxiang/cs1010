@@ -20,7 +20,7 @@ int main(void) {
 	double m, pM;          // midpoint and function value at midpoint
 	double fabs_ab;
 
-	count=0; 			   // initiate count
+	count=1; 			   // initiate count
 
 	printf("Enter coefficients (c3,c2,c1,c0) of polynomial: ");
 	scanf("%d %d %d %d", &c3, &c2, &c1, &c0);
@@ -35,22 +35,24 @@ int main(void) {
 
 		//calculate midpoint
 		m=(a+b)/2;
-
-		printf("a = %f  ; ",a);
-		printf("b = %f  ; ",b);
-		printf("m = %f  ; \n",m);
+        
+		//printf("#%d :",count);
+  
+		//printf("a = %f  ; ",a);
+		//printf("b = %f  ; ",b);
+		//printf("m = %f   \n",m);
 
 
 
 		//find P(a), p(b),p(m)
 		pA=polynomial(a,c3,c2,c1,c0);
-		printf("p(a) = %f; ",pA);
+		//printf("p(a) = %f; ",pA);
 
 		pB=polynomial(b,c3,c2,c1,c0);
-		printf("p(b) = %f; ",pB);
+		//printf("p(b) = %f; ",pB);
 
 		pM=polynomial(m,c3,c2,c1,c0);
-		printf("p(m) = %f;\n ",pM);
+		//printf("p(m) = %f\n ",pM);
 
 		//replace m with a or b depends on sign or m
 		if ((pM<0 && pA<0)||(pM>0&&pA>0)){
@@ -61,7 +63,7 @@ int main(void) {
 
 		//printf("a - b = %f\n", fabs(a-b));
 
-		printf("\n");
+		//printf("\n");
 
 		count++;
 	}while(fabs_ab>=THRESHOLD && fabs(pM)!=0);
