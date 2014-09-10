@@ -10,9 +10,9 @@
 
 #include <stdio.h>
 
-int find_sqrfree(int lower,int upper);
-int sqr_num_test(int num);
-int compare_num(int num1,int num2);
+int find_sqrfree(int ,int );
+int sqr_num_test(int );
+int compare_num(int ,int );
 
 int main(void) {
 	int lower1, upper1, lower2, upper2,num_range1,num_range2; //num_range1,num_range2 = number of squre free numers.
@@ -26,29 +26,23 @@ int main(void) {
 
 	switch (compare_num(num_range1,num_range2)){
 		case 0:
-		printf("Both ranges have the same number of square-free numbers: %d\n",num_range1);
-		break;
+			printf("Both ranges have the same number of square-free numbers: %d\n",num_range1);
+			break;
 		case 1:
-		printf("Range [%d, %d] has more square-free numbers: %d\n",lower1,upper1,num_range1);
-		break;
+			printf("Range [%d, %d] has more square-free numbers: %d\n",lower1,upper1,num_range1);
+			break;
 		case 2:
-		printf("Range [%d, %d] has more square-free numbers: %d\n",lower2,upper2,num_range2);
-		break;
+			printf("Range [%d, %d] has more square-free numbers: %d\n",lower2,upper2,num_range2);
+			break;
 		default:
-		printf("Something went wrong");
+			printf("Something went wrong");
 	}
 
 	return 0;
 }
 
-// Write at least another function (of your own choice) to compute
-// some results. You may add other functions you deem necessary.
 
-
-// This function makes use sqr_num_test function,sqr_num_test
-// function returns 0 if a the value of lower is divisible by a square number
-// and 1 if it is not.So total number of square free number can be simpled obtained by adding
-// the results together.
+// Return results
 int find_sqrfree(int lower,int upper){
 	int i,count_sqrfree;
 
@@ -61,12 +55,13 @@ int find_sqrfree(int lower,int upper){
 	return count_sqrfree;
 }
 
-// This method is used to determine whether a number passed in is divisible by a square number.
 // Returns 0 if the number is divisible by square num, 1 otherwise.We started from 2 instead of 1
 // because "a square_free number is divisible by no square number except 1."
 int sqr_num_test(int num){
 	int k;
-	for (k=2;k<=num/2;k++){
+	// k = num/2 because k*k will not be divisible by num if k>num/2,
+	//therefore we can conclude directly that num is square-free.eg,num=4,k=num/2+1,k*k=9, 4 is not dvivisible by 9.  
+	for (k=2;k<=num/2;k++){ 
 		if (num%(k*k)==0){
 			return 0;
 		}

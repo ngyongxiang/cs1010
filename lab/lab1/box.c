@@ -19,8 +19,8 @@
 #include <math.h>
 
 // Declare function prototypes
-double compute_diagonal(int len,int width,int height);
-int compute_surface_area(int len,int width,int height);
+double compute_diagonal(int,int,int);
+int compute_surface_area(int,int,int);
 
 int main(void){
 	// Declare variables

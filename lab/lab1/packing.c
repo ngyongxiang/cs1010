@@ -16,7 +16,7 @@
 #include<math.h>
 
 // Function prototypes
-int compute_max_slabs(int tray_len,int tray_width,int slab_len,int slab_width);
+int compute_max_slabs(int,int,int,int);
 
 int main(void){
 	// Declare variables
@@ -49,17 +49,16 @@ int compute_max_slabs(int tray_len,int tray_width,int slab_len,int slab_width){
     // Calculate how many rows slabs can be packed.
 	row=tray_len/slab_width;
 	// Calculate how many columns slabs can be packed.
-	col=tray_width/slab_len;
-    
+	col=tray_width/slab_len;    
     h_fit=row*col;
-    // Next we calculate max no. of slabs can be fitted vertically.
-    
+
+
+    // Calculate max no. of slabs can be fitted vertically.
 	row=tray_width/slab_width;
 	col=tray_len/slab_len;
-    
     v_fit=row*col;
     
-    // Lastly we compare which arrangement, horizontal or vertical, can we pack more slabs.
+    // Compare which arrangement, horizontal or vertical, can we pack more slabs.
 	if (h_fit>v_fit)
 		return h_fit;
 	else
