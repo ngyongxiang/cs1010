@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return"
+			],
+			[
 				"num",
 				"num1"
 			],
@@ -60,36 +64,88 @@
 	"buffers":
 	[
 		{
-			"file": "discussion/discussion2/numbers.c",
+			"file": "practise/primeTest.c",
 			"settings":
 			{
-				"buffer_size": 580,
-				"line_ending": "Windows"
+				"buffer_size": 371,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "discussion/discussion2/question4.c",
+			"file": "/Users/kenan/Downloads/Practice10/testdata/input/prime3.in",
 			"settings":
 			{
-				"buffer_size": 142,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "discussion/discussion2/triangle.c",
-			"settings":
-			{
-				"buffer_size": 298,
-				"line_ending": "Windows"
+				"buffer_size": 2,
+				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/C.sublime-build",
 	"command_palette":
 	{
-		"height": 334.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				"pres",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefe",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"SimpleTODO: List TODO"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
@@ -119,10 +175,6 @@
 				"Fetch: Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"install ",
 				"Package Control: Install Package"
 			],
@@ -136,10 +188,6 @@
 			],
 			[
 				"pack",
-				"Package Control: Install Package"
-			],
-			[
-				"isntall",
 				"Package Control: Install Package"
 			],
 			[
@@ -163,7 +211,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 392.0
+		"width": 579.0
 	},
 	"console":
 	{
@@ -186,11 +234,27 @@
 	},
 	"expanded_folders":
 	[
-		"/C/gitrepos/cs1010",
-		"/C/gitrepos/cs1010/discussion"
+		"/Volumes/BackupAndData/gitrepos/cs1010",
+		"/Volumes/BackupAndData/gitrepos/cs1010/lab",
+		"/Volumes/BackupAndData/gitrepos/cs1010/practise"
 	],
 	"file_history":
 	[
+		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/BackupAndData/gitrepos/cs1010/practise/primeTest.c",
+		"/Volumes/BackupAndData/gitrepos/cs1010/test.c",
+		"/Volumes/BackupAndData/gitrepos/cs1010/README.md",
+		"/Volumes/BackupAndData/gitrepos/cs1010/test",
+		"/Volumes/BackupAndData/gitrepos/cs1010/lecture/unit3/Unit3_MileToKm",
+		"/Volumes/BackupAndData/gitrepos/cs1010/lecture/third.out",
+		"/Volumes/BackupAndData/gitrepos/cs1010/practise/speedOfSound",
+		"/Volumes/BackupAndData/gitrepos/cs1010/cs1010.sublime-project",
+		"/Volumes/BackupAndData/gitrepos/cs1010/lecture/unit2/core",
+		"/Volumes/BackupAndData/gitrepos/cs1010/lecture/unit3/lectdemo/Unit3_MileToKm.c",
+		"/Volumes/BackupAndData/gitrepos/cs1010/discussion/discussion2/numbers.c",
+		"/Volumes/BackupAndData/gitrepos/cs1010/discussion/discussion2/question4.c",
+		"/Volumes/BackupAndData/gitrepos/cs1010/discussion/discussion2/triangle.c",
 		"/C/gitrepos/cs1010/discussion/discussion2/numbers.c",
 		"/C/gitrepos/cs1010/lab/lab1/box.c",
 		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/C.sublime-build",
@@ -201,20 +265,17 @@
 		"/Volumes/BackupAndData/gitrepos/cs1010/lab/lab0/box_volume",
 		"/Volumes/BackupAndData/gitrepos/cs1010/lab/lab1/box.c",
 		"/Volumes/BackupAndData/gitrepos/cs1010/cs1010.sublime-workspace",
-		"/Volumes/BackupAndData/gitrepos/cs1010/cs1010.sublime-project",
 		"/Volumes/Sublime Text/Sublime Text.app/Contents/MacOS/changelog.txt",
 		"/Volumes/BackupAndData/gitrepos/cs1010/lab/lab0/box_volume.c",
 		"/Users/kenan/Desktop/disable_activation_osx",
 		"/Volumes/BackupAndData/gitrepos/cs1010/lab/lab1/packingV2.c",
-		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/Fetch.sublime-settings",
 		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/kenan/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -228,6 +289,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0",
+			"/",
 			"format",
 			"file",
 			"Dalton",
@@ -264,85 +327,89 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "discussion/discussion2/numbers.c",
+					"file": "practise/primeTest.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 580,
+						"buffer_size": 371,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								378,
-								378
+								237,
+								237
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "discussion/discussion2/question4.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 142,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"BracketHighlighterBusy": false,
+							"bh_regions":
 							[
-								142,
-								142
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "discussion/discussion2/triangle.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 298,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								101,
-								101
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -350,13 +417,101 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/kenan/Downloads/Practice10/testdata/input/prime3.in",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (dark) (SL).tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 36.0
 	},
 	"input":
 	{
