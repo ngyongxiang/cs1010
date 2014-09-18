@@ -20,7 +20,8 @@ int main(void){
 	printf("Enter number of candles and \n" 
 			"number of residuals to make a new candle: ");
 	scanf("%d %d",&num_candles,&amt_newcandle);
-	printf("Total candles burnt = %d\n",count_candle(num_candles,amt_newcandle));
+
+	printf("Total candles burnt = %d\n", count_candle(num_candles,amt_newcandle));
 	return 0;
 
 }
@@ -32,11 +33,13 @@ int main(void){
    if amt_candle < num_candles, we can directly conclude that
    number of candles burnt = num_candles without looping.
  */
+
+// count candle returns number of cancles.
 int count_candle(int num_candles,int amt_newcandle){
 	int counter; //number of new candles made from residual wax
 
-	for (counter=1;counter<=num_candles;counter++){
-		if (counter%amt_newcandle==0){
+	for (counter=1; counter<=num_candles; counter++){
+		if (counter % amt_newcandle == 0){
 			num_candles++;
 		}
 	}
