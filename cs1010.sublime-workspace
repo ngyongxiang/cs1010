@@ -63,20 +63,56 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "discussion/discussion4/non-neg.c",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/User/C.sublime-build",
 	"command_palette":
 	{
-		"height": 185.0,
+		"height": 81.0,
 		"selected_items":
 		[
 			[
-				"theme",
-				"Themr: Next theme"
+				"update",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"evernote",
+				"Evernote: List recent notes"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"Themr: Next theme"
 			],
 			[
 				":w",
@@ -107,10 +143,6 @@
 				"TodoReview: Project Files"
 			],
 			[
-				"isntall",
-				"Package Control: Install Package"
-			],
-			[
 				"remove pac",
 				"Package Control: Remove Package"
 			],
@@ -121,10 +153,6 @@
 			[
 				"list p",
 				"Package Control: List Packages"
-			],
-			[
-				"c",
-				"Set Syntax: C"
 			],
 			[
 				"insatll",
@@ -199,7 +227,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 386.0
+		"width": 499.0
 	},
 	"console":
 	{
@@ -222,10 +250,20 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/a0126077/Documents/cs1010/cs1010"
+		"/C/Users/a0126077/Documents/cs1010/cs1010",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/discussion",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/lab"
 	],
 	"file_history":
 	[
+		"/C/Users/a0126077/Documents/cs1010/Sublime Text Build 3065/Data/Packages/User/Evernote.sublime-settings",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/Week5_ReverseArray.c",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/lecture/unit3/freezerV2",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/lecture/example1",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/practise/perfectNumber.c",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/discussion/discussion3/convertloop1.c",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/discussion/discussion3/bad_prog4.c",
+		"/C/Users/a0126077/Documents/cs1010/cs1010/discussion/discussion3/badprogram3.c",
 		"/C/Users/a0126077/Documents/cs1010/cs1010/practise/primeTest.c",
 		"/C/Users/a0126077/Documents/cs1010/Sublime Text Build 3065/Data/Packages/User/Preferences.sublime-settings",
 		"/Users/kenan/Downloads/Practice10/testdata/input/prime3.in",
@@ -316,8 +354,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "discussion/discussion4/non-neg.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -49,3 +49,28 @@ int sum_prop_divsor(int num){
 
 	return sum; 
 }
+
+int a = 10, b = 200;
+
+while ((a*a) < (a+b)) {
+    printf("a = %d, b = %d\n", a, b);
+    a++; 
+    b+=10;
+}
+
+int x, y, count = 0;
+
+for (x = 1; x <= 6; x++)
+    for (y = x + 1; y <= 6; y++)
+        count++;
+
+printf("count = %d\n", count);
+
+
+
+x        y				count
+1 	     2,3,4,5,6       5
+2        3,4,5,6         4
+3        4,5,6           3
+4        5,6             2
+5        5               1
