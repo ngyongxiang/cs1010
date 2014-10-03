@@ -43,12 +43,16 @@ double pi(int arr[], int size) {
 	count_sets=0;
 	for (i = 0; i < size; i++){
 		for (k=i+1; k < size ;k++){
-			if (gcd(i,k)==1){
+			if (gcd(arr_nums[i],arr_nums[k])==1){
 				count_nocf++;
 			}
+			//printf("GCD %d\n:", gcd(i,k));			
+			//printf("i: %d k: %d\n", i,k);
+
 			count_sets++;
 		}
 	}
-
+	//printf("Count sets: %d\n ", count_sets);
+	//printf("Count nocf: %d\n ", count_nocf);
 	return sqrt(6.0/((double)count_nocf/count_sets)) ;
 }
