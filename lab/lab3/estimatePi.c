@@ -10,6 +10,7 @@
 
 #include "gcd.h"
 #include <stdio.h>
+#include <math.h>
 
 #define MAX_INTS 50 
 
@@ -27,6 +28,8 @@ int main(void) {
 		scanf("%d",&arr_nums[i]);
 	}
 
+	printf("Estimated pi = %.4f\n",pi(arr_nums,size));
+
 
 	return 0;
 }
@@ -34,6 +37,18 @@ int main(void) {
 // Reads in an int array that contains the values and size of the array and returns estimated value of pi.
 
 double pi(int arr[], int size) {
+	
+	int count_nocf,count_sets,i,k;
+	count_nocf=0;
+	count_sets=0;
+	for (i = 0; i < size; i++){
+		for (k=i+1; k < size ;k++){
+			if (gcd(i,k)==1){
+				count_nocf++;
+			}
+			count_sets++;
+		}
+	}
 
-	return 1.2345; // Just a stub; replace it with the correct answer
+	return sqrt(6.0/((double)count_nocf/count_sets)) ;
 }
