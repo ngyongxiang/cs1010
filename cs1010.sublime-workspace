@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"num",
+				"num_students"
+			],
+			[
+				"en",
+				"enrol"
+			],
+			[
+				"stu",
+				"students"
+			],
+			[
+				"v",
+				"vote"
+			],
+			[
 				"arr",
 				"arr_nums"
 			],
@@ -43,6 +59,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lecture/unit10-multiarray/enroll_standard.c",
+			"settings":
+			{
+				"buffer_size": 2545,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lecture/unit10-multiarray/classEnroll.c",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -50,6 +82,10 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
 			[
 				"list",
 				"Package Control: List Packages"
@@ -159,7 +195,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 498.0
+		"width": 450.0
 	},
 	"console":
 	{
@@ -181,11 +217,20 @@
 	"expanded_folders":
 	[
 		"/E/gitrepos/cs1010",
-		"/E/gitrepos/cs1010/lab",
-		"/E/gitrepos/cs1010/lab/lab3"
+		"/E/gitrepos/cs1010/lecture",
+		"/E/gitrepos/cs1010/lecture/unit10-multiarray",
+		"/E/gitrepos/cs1010/lecture/unit12",
+		"/E/gitrepos/cs1010/lecture/unit8",
+		"/E/gitrepos/cs1010/lecture/unit9"
 	],
 	"file_history":
 	[
+		"/E/gitrepos/cs1010/lecture/unit8/missingdigits2.c",
+		"/E/gitrepos/cs1010/lecture/unit8/reverseArray.c",
+		"/D/cygwin64/Vim/vimrc",
+		"/C/Users/kenan/Desktop/vimrc",
+		"/E/gitrepos/cs1010/lecture/unit9/Unit9_VoteCount.c",
+		"/E/gitrepos/cs1010/lecture/unit10-multiarray/findmax.c",
 		"/E/gitrepos/cs1010/lab/lab3/estimatePi.c",
 		"/E/gitrepos/cs1010/lab/lab3/gcd.h",
 		"/E/Downloads/ChromeDownlods/gcd.o",
@@ -265,8 +310,198 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lecture/unit10-multiarray/enroll_standard.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								335
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-google.light (SL).tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tabs_extra_last_activated": 1412675864.8,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "lecture/unit10-multiarray/classEnroll.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-google.light (SL).tmTheme",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tabs_extra_last_activated": 1412676481.67,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -287,11 +522,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -301,6 +543,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 90.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -347,7 +593,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -355,7 +601,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
