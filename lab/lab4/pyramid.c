@@ -7,7 +7,7 @@ int maxPathValue(int arr[][MAX_SIZE],int rows);
 
 int main(void){
 	int size;
-	int pyramid[][MAX_SIZE];
+	int pyramid[MAX_SIZE][MAX_SIZE];
 
 	// Read a possitive integer value for size.
 	// size <= 10
@@ -20,7 +20,7 @@ int main(void){
 
 	scanTriangularArray(pyramid,size);
 
-			printf("What is size: %d\n",size);
+	printf("What is size: %d\n",size);
 
 	//printf("%d", maxPathValue(pyramid,size));
 
@@ -34,7 +34,7 @@ int scanTriangularArray(int arr[][MAX_SIZE],int size){
 	// row 1 = read once, row 2 = read twice, row 3 =  read 3 times
 	// i = 0, scanf 1 time, so when i = 0 , run scanf when k < 1 (arr[0]) /end iter
 	// i = 1, scanf 2 time, so when i = 1 , run scanf when k < 2 (arr[0]),arr[1] /end iter 
-	
+
 	for (i = 0 ; i < size; i++){
 
 		for (k = 0; k < i+1; k++){
