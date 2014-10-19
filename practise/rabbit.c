@@ -15,13 +15,12 @@
 	int arr_rocks[20];
 	printf("Enter number of rocks: ");
 	scanf("%d", &num_rocks);
-
 	int i;
 	for (i=0;i<num_rocks;i++){
 		scanf("%d",&arr_rocks[i]);
 	}
 
-	printf("%d\n",countJumps(arr_rocks,num_rocks));
+	printf("%d",countJumps(arr_rocks,num_rocks));
 
 	return 0;
 }
@@ -47,7 +46,6 @@ int countJumps(int rocks[], int size) {
 			if (rocks[i]<=test_jump&& (rocks[i+1]>test_jump ||i==size-1  )){
 				jumps++;
 				stop_position=rocks[i];
-				printf("The position now is at %d\n",stop_position);
 			}
 		}
 		//update position for next iteration.

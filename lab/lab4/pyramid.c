@@ -3,7 +3,8 @@
 
 
 int scanTriangularArray(int arr[][MAX_SIZE], int size);
-int maxPathValue(int arr[][MAX_SIZE],int rows);
+int maxPathValue(int arr[][MAX_SIZE],int size);
+int max(int a, int b);
 
 int main(void){
 	int size;
@@ -20,13 +21,11 @@ int main(void){
 
 	scanTriangularArray(pyramid,size);
 
-	printf("What is size: %d\n",size);
 
-	//printf("%d", maxPathValue(pyramid,size));
+	printf("%d", maxPathValue(pyramid,size));
 
 	return 0;
 }
-
 // Reads in numbers, place EACH number in the correct array and return the number of rows.
 int scanTriangularArray(int arr[][MAX_SIZE],int size){
 	int i, k;
@@ -45,34 +44,34 @@ int scanTriangularArray(int arr[][MAX_SIZE],int size){
 
 
 	}
-	return i;
+	return size;
 
 }
 
 // Find the sum from bottom to top of the pyrimid that has the maximum sum.
 // This is basically asking finding the biggest number in each row, add them together total+=max;
-int maxPathValue(int arr[][MAX_SIZE],int rows){
-	printf("Rows is :%d\n",rows);	
-	int total,max,i,k;
-	total = 0;
+int maxPathValue(int arr[][MAX_SIZE],int size){
+	int temp_sum,max,row,element;
+	temp_sum = 0;
+	sum = 0;
 
-	for (i = rows-1 ; i >=0; i--){
-		//at begining of each row, init max by placing first element inside, then k can start from 1.
-		max = arr[i][0];
-		printf("Max: %d, i=%d\n",max,i);	
-		// row 4,i need to be 3 => (if arr[i][k=1-3]> max) max = arr[i][1-3])* 4
-		// row 3,i need to be 2 => (if arr[i][k=1-2]> max) max = arr[i][1-2])* 3 
 
-		for (k = 1; k <=i; k++){
-			if (arr[i][k] > max)
-				max = arr[i][k];
+	// starting from second row
+	for (row = 1; row < size; row++){
 
+		for (element = 0; element < row; element++){
+			//for each element , check from arr[row-1][elem 0 - row-1]
+
+						
 		}
-		// at the end of each element loop, add in sum to total;
-
-		total+=max;
 
 	}
+	
+}
 
-	return total;
+int max(int a, int b){
+	if (b > a)
+		return b
+
+	return a
 }
