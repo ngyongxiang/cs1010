@@ -35,9 +35,9 @@
 
  	printf("Enter number of blocks: ");
  	scanf("%d", &size);
- 	printf("enter the numbers: ");
+ 	printf("Enter the numbers: ");
  	while (i < size){
- 		scanf("%d", arr[i]);
+ 		scanf("%d", &arr[i]);
  		i++;
  	}
 	// Complete the code
@@ -87,12 +87,12 @@
  	sqr_a = a * a;
  	sqr_b = b * b;
 
- 	if ((sqr_a % 10) < (sqr_b % 10)){
+ 	if ((sqr_b % 10) < (sqr_a % 10)){
  		
  		return 1;
  	}else if ( (sqr_a %10) == (sqr_b % 10)) {
 
- 		if (sumDigits(a) < sumDigits (b)){
+ 		if (sumDigits(b) < sumDigits (a)){
 
  			return 1;
  		}	
