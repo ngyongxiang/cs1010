@@ -16,6 +16,7 @@ int main(void){
 	a8=getchar();//<
 	
 	fflush(stdin);
+	fflush(stdin);
 	// start trying out scanf
 	scanf("%c%c%c%c%c%c%c%c%c", &a9,&a10,&a11,&a12,&a13,&a14,&a15,&a16,&a17);//-rew {[]}
 
