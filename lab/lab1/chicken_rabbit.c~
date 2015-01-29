@@ -26,9 +26,8 @@ int main(void) {
 	num_rabbit = compute_rabbit_number(num_head, num_leg);
 	num_chicken = compute_chicken_number(num_head,num_rabbit);
 
-	// if value is not integer or value is negaive number, output to -1 -1
-	if (!is_integer(num_rabbit) || !is_integer(num_chicken) 
-		|| num_rabbit < 1 || num_chicken < 1 ){
+
+	if (!is_integer(num_rabbit) || !is_integer(num_chicken)){
 
 		num_rabbit = -1;
 		num_chicken = -1;
