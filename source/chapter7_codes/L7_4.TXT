@@ -1,0 +1,5 @@
+We read
+four lines of
+text from our
+input file.
+
