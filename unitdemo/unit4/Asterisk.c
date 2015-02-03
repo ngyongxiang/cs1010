@@ -19,4 +19,15 @@ void print_asterisks(int num){
 	printf("\nDone!\n");
 }
 
+void print_asterisks2(int num){
 
+	int i;
+	if (n > 0){
+
+		for (i = 1 ; i<=2*n -1 ; i++)
+			printf("*");
+		printf("\n")
+	}
+
+
+}
