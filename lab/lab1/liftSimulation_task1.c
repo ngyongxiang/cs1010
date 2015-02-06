@@ -8,18 +8,20 @@ char ** staticLift(int cur_pos)
 {
 	
 	/*add your code here*/
-		char output[ ][12] = 
+		char output[6][12] = 
 	    {{'-','-','-','-','-','-','-','-','-','-','-','-'},
 		{'|','-','-','-','-','-','-','[','_','_',']','|'},
 		{'|','-','-','-','-','-','-','[','_','_',']','|'},
 		{'|','-','-','-','-','-','-','[','_','_',']','|'},
 		{'|','-','-','-','-','-','-','[','_','_',']','|'},
 		{'|','-','-','-','-','-','-','[','_','_',']','|'}};
+
 		
 		// replace character based on cur_pos
-		output[cur_pos][12] = '>';
+		//output[cur_pos][12] = '>';
+		
+		return output;
 			
-	return output;
 }
 //************************  TASK 1 **********************************//
 int print_arr(char output[][12]);
@@ -31,6 +33,7 @@ int main()
 	scanf("%d",&cur_pos);
 
 	char **array1=staticLift(cur_pos);
+	print_arr(array1);
 
 		
 	return 0;
