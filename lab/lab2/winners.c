@@ -29,7 +29,19 @@ int count_winners(int fact_dig, int must_dig, int num_participant){
 
 // return 1 if a number is a winner , 0 otherwise
 // a winner is a number that is a multiple of factor-digit as well as contains the must-have-digit
-int is_winner(int fact_dig, int must_dig, int num_participant){
-
+int is_winner(int num,int fact_dig, int must_dig){
+	int is_winner = 0;
+	if (num % fact_dig != 0){
+		is_winner = 0;
+	}else {
+		while(num > 0){
+			if (num % 10 == must_dig){
+				is_winner = 1;
+				break;
+			}
+			num/=10;
+		}
+	}
+	return is_winner;
 }
 
