@@ -13,33 +13,32 @@
 int count_candles(int, int);
 
 int main(void) {
-	int num_candles, amt_residual;	
+	int num_candles, residual_req;	
 	printf("Enter number of candles and \n");
 	printf("number of residuals to make a new candle: ");
-	scanf("%d %d", &num_candles, &amt_residual);
+	scanf("%d %d", &num_candles, &residual_req	);
 
 	
-	printf("Total candles burnt = %d\n", count_candles(num_candles, amt_residual));
+	printf("Total candles burnt = %d\n", count_candles(num_candles, residual_req));
 	
 	return 0;
 }
 
 
-// count the number of candles can be burnt 
-// pre-con : amt_residual > 1 
+//count the number of candles can be burnt 
+//pre-con : amt_residual > 1 
 int count_candles(int num_candles, int amt_residual){
 	int candles_burnt = 0 ,i;
 		
-	// with each candle burnt, candles burn ++,num_candles --;
+	// with each candle burnt, candles burn ++, i--;
 	for (i = num_candles; i > 0 ; i--){
-		if ( 
-			((candles_burnt !=0) && (candles_burnt % amt_residual ==0))){
-			
-			// if enough candles are burnt to make a new candle, then i++ (offset counter by 1 to reflect new candle made)
-			i++;	
-		}
-
+		
 		candles_burnt ++;
+		if ( (candles_burnt >= amt_residual) && (candles_burnt % amt_residual == 0 )){
+			
+			candles_burnt ++;	
+		}		
+	
 	}
 
 	return candles_burnt;
