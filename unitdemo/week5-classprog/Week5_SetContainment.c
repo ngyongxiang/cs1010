@@ -52,6 +52,24 @@ void printArray(int arr[], int size)
 
 // This function is a stub. Complete it.
 int isSubset(int arrA[], int sizeA, int arrB[], int sizeB) {
+	int i , k , found;
+	if (sizeA > sizeB)
+		return 0;
+	else {
+		
+		for (i = 0 ; i < sizeA; i++){
+			found = 0;
+			for (k = 0; k < sizeB; k++){
+				// if found set found flag to 1
+				if (arrA[i] == arrB[k])
+					found = 1;
+			}
+			// if nothing is found , it is not a subset
+			if (found == 0)
+				return 0;
+		}
+	}
 	return 1;
+
 }
 
