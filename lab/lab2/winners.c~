@@ -33,7 +33,7 @@ int main(void)
 
 
 // determine who is winner and count number of winners
-// pre-con : num_participants > 1
+ //pre-con : num_participants > 1
 int count_winners(int fact_dig, int must_dig, int num_participant){
 
 	int num_winners,i;
@@ -50,16 +50,16 @@ int count_winners(int fact_dig, int must_dig, int num_participant){
 // a winner is a number that is a multiple of factor-digit as well as contains the must-have-digit
 // pre-con : num > 1
 int is_winner(int num,int fact_dig, int must_dig){
-	int is_winner = 1;
-	
+	int is_winner = 0;
 	// if fact_dig = 0 || must_dig==0 return 0 to avoid arithmethic error
+	// num % fact_dig is redundant , but adds clarity and code readability
 	if (fact_dig==0 || must_dig==0 || (num % fact_dig)!= 0){
 		is_winner = 0;
 	}else {
-		while(num > 0){ 
+		while(num > 0){
 			if (num % 10 == must_dig){
 				is_winner = 1;
-				break; // question: break this break, break out from if statement, or as as the while loop as intended?
+				break;
 			}
 			num/=10;
 		}
