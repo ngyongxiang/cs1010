@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
  * CS1010 AY2014/5 Semester 2 Lab2 Ex2
  * winners.c
@@ -7,7 +6,7 @@
  * A program to take a factor-digit and must-have-digit and 
  * calculate the number of wineners based on the number of participants
  */
-
+#include <stdio.h>
 
 int count_winners(int fact_dig, int must_dig, int num_participant);
 int is_winner(int num,int fact_dig, int must_dig);
@@ -25,10 +24,10 @@ int main(void)
 	scanf("%d", &num_participant);
 
 	// process info
-	num_winners = count_winners (factor, must_dig, num_participant);
+	num_winners = count_winners ( factor, must_dig, num_participant);
 
 	// display output
-	printf("Number of winners: %d", num_winners);
+	printf("Number of winners: %d\n", num_winners);
 	return 0;
 }
 
@@ -38,7 +37,7 @@ int main(void)
 int count_winners(int fact_dig, int must_dig, int num_participant){
 
 	int num_winners,i;
-	for (i = 1; i <= num_participant; i ++){
+	for (i = fact_dig; i <= num_participant; i++){
 		num_winners+=is_winner(i, fact_dig, must_dig);
 
 	}
@@ -49,9 +48,11 @@ int count_winners(int fact_dig, int must_dig, int num_participant){
 
 // return 1 if a number is a winner , 0 otherwise
 // a winner is a number that is a multiple of factor-digit as well as contains the must-have-digit
+// pre-con : num > 1
 int is_winner(int num,int fact_dig, int must_dig){
 	int is_winner = 0;
-	if (num % fact_dig != 0){
+	// if fact_dig = 0 return 0 to avoid arithmethic error
+	if (fact_dig==0 && (num % fact_dig)!= 0){
 		is_winner = 0;
 	}else {
 		while(num > 0){
