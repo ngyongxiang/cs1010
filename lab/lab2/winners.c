@@ -20,9 +20,8 @@ int main(void)
 
 // take in factor-digit, must have digit and num_digit and return num of winners
 int count_winners(int fact_dig, int must_dig, int num_participant){
-
 	int num_winners;
-
+	
 	return num_winners;
 }
 
