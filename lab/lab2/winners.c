@@ -50,7 +50,7 @@ int count_winners(int fact_dig, int must_dig, int num_participant){
 // a winner is a number that is a multiple of factor-digit as well as contains the must-have-digit
 // pre-con : num > 1
 int is_winner(int num,int fact_dig, int must_dig){
-	int is_winner = 1;
+	int is_winner = 0;
 	
 	// if fact_dig = 0 || must_dig==0 return 0 to avoid arithmethic error
 	if (fact_dig==0 || must_dig==0 || (num % fact_dig)!= 0){
