@@ -2,6 +2,8 @@
 #include <string.h>
 #define LENGTH 10
 
+//this addes to surface
+
 int main(void){
 	char str[LENGTH];
 	char str1[LENGTH];
@@ -11,7 +13,7 @@ int main(void){
 	// scanf("%s",str);
 	// fgets(str,LENGTH,stdin);
 	// for (i = 0; i < LENGTH; i++){
-	// 	printf("%c",str[i]);
+	// removed from surface
 	str[0] = 'a';
 	str[1] = 'p';
 	str[2] = 'p';
@@ -70,6 +72,6 @@ int main(void){
 	printf("\n");
 	printf("The two strings are : %d", strcmp(str,str1));
 
-	
+
 	return 0;
 }
