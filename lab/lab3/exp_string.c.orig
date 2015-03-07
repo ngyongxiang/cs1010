@@ -1,7 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 #define LENGTH 10
+//this is a test line
 
+<<<<<<< HEAD
+//this addes to surface
+
+=======
+//give comment exist on dev-seahouse
+>>>>>>> fb8cd8d357e735d949c5927834079a3bc56d5559
 int main(void){
 	char str[LENGTH];
 	char str1[LENGTH];
@@ -11,7 +18,7 @@ int main(void){
 	// scanf("%s",str);
 	// fgets(str,LENGTH,stdin);
 	// for (i = 0; i < LENGTH; i++){
-	// 	printf("%c",str[i]);
+	// removed from surface
 	str[0] = 'a';
 	str[1] = 'p';
 	str[2] = 'p';
@@ -70,6 +77,6 @@ int main(void){
 	printf("\n");
 	printf("The two strings are : %d", strcmp(str,str1));
 
-	
+
 	return 0;
 }

@@ -14,13 +14,13 @@ int main(void)
 	//read the matrix and size here
 	scanf("%d", &size);
 	read_matrix(matrix,size);
-	printf("=========== Before ==========\n");
-	print_matrix(matrix,size);
+	//printf("=========== Before ==========\n");
+	//print_matrix(matrix,size);
 
 
 	rotate(matrix, size);
 
-	printf("=========== After ==========\n");
+	//printf("=========== After ==========\n");
 	print_matrix(matrix, size);
 
 	return 0;
@@ -33,7 +33,7 @@ void print_matrix(int matrix[][MAX_COL], int size)
 	int i, k;
 	for (i = 0; i < size; i++){
 		for ( k = 0; k < size; k++){
-			printf("%d ", matrix[i][k]);
+			printf("%2d", matrix[i][k]);
 		}
 		printf("\n");
 	}
@@ -45,7 +45,18 @@ void print_matrix(int matrix[][MAX_COL], int size)
 void rotate(int matrix[][MAX_COL],int size) 
 {	
 	//rotate the matrix here
-	//step 1:  transpose
+	int i , k ,temp = 0;
+
+	for (i = 0; i < size/2; i++){
+		for (k = 0;  k < (size+1)/2; k++){
+			temp = matrix[i][k];
+			matrix[i][k] = matrix[size-1-k][i];
+			matrix[size-1-k][i] = matrix[size-1-i][size-1-k];
+			matrix[size-1-i][size-1-k] = matrix[k][size-1-i];
+			matrix[k][size-1-i] = temp;
+		}
+	}
+
 }
 
 // read matrix
