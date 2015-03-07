@@ -45,6 +45,7 @@ void print_matrix(int matrix[][MAX_COL], int size)
 void rotate(int matrix[][MAX_COL],int size) 
 {	
 	//rotate the matrix here
+<<<<<<< HEAD
 	int i , k ,temp = 0;
 
 	for (i = 0; i < size/2; i++){
@@ -56,6 +57,9 @@ void rotate(int matrix[][MAX_COL],int size)
 			matrix[k][size-1-i] = temp;
 		}
 	}
+=======
+	//step 1:  transpose
+>>>>>>> c683e12505eb9fe67138d9a93dabb95c5a825027
 }
 
 // read matrix
