@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #define LENGTH 10
+//this is a test line
 
+//give comment exist on dev-seahouse
 int main(void){
 	char str[LENGTH];
 	char str1[LENGTH];
