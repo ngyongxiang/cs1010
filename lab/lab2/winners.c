@@ -35,9 +35,7 @@ int main(void)
 // determine who is winner and count number of winners
 // pre-con : num_participants > 1
 int count_winners(int fact_dig, int must_dig, int num_participant){
-	int num_winners;
 	
-
 	int num_winners,i;
 	for (i = fact_dig; i <= num_participant; i++){
 		num_winners+=is_winner(i, fact_dig, must_dig);

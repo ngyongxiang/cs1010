@@ -35,17 +35,14 @@ int main(void)
 // determine who is winner and count number of winners
 // pre-con : num_participants > 1
 int count_winners(int fact_dig, int must_dig, int num_participant){
-<<<<<<< HEAD
 	int num_winners;
 	
-=======
 
 	int num_winners,i;
 	for (i = fact_dig; i <= num_participant; i++){
 		num_winners+=is_winner(i, fact_dig, must_dig);
 
 	}
->>>>>>> 984c9036eb3facba47beed33f282d85f254e00bf
 	return num_winners;
 }
 
@@ -55,7 +52,7 @@ int count_winners(int fact_dig, int must_dig, int num_participant){
 // a winner is a number that is a multiple of factor-digit as well as contains the must-have-digit
 // pre-con : num > 1
 int is_winner(int num,int fact_dig, int must_dig){
-	int is_winner = 1;
+	int is_winner = 0;
 	
 	// if fact_dig = 0 || must_dig==0 return 0 to avoid arithmethic error
 	if (fact_dig==0 || must_dig==0 || (num % fact_dig)!= 0){
